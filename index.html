@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balark Fitness</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-position: 364px top;
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        border: 2px /* solid red */;
+        left: 32px;
+        top: 26px;
+    }
+
+    .left img {
+        width: 101px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 65%;
+        margin: 30px auto;
+        border: 2px /* solid green */;
+    }
+
+    .right {
+        display: inline-block;
+        border: 2px /* solid yellow */;
+        position: absolute;
+        right: 35px;
+        top: 39px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 22px;
+    }
+
+    .navbar li a:hover,
+    a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 8px;
+        background-color: black;
+        color: white;
+        padding: 5px 12px;
+        border: 3px solid grey;
+        border-radius: 11px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(107, 104, 104);
+    }
+
+    .container {
+        border: 2px /*solid white */;
+        margin: 110px 90px;
+        padding: 75px;
+        width: 32%;
+        border-radius: 20px;
+    }
+
+    .form-group input {
+        font-size: 20px;
+        width: 380px;
+        text-align: center;
+        margin: 12px auto;
+        padding: 2px;
+        display: block;
+        border-radius: 9px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        font-size: 20px;
+        margin: 16px auto;
+        display: block;
+        width: 73%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- This is for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div> Balark Fitness</div>
+        </div>
+        <!-- This is for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Workout Songs</a></li>
+            </ul>
+        </div>
+        <!-- This is for buttons -->
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> Best GYM of Kota</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Location">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
